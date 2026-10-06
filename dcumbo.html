@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Hub Masala - Durga Puja Special Combo Offer</title>
+    <!-- Google Fonts for Festive Look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #800000; /* Deep Maroon */
+            --gold-color: #FFD700;    /* Vibrant Gold */
+            --orange-color: #FF4500;  /* Festive Orange/Red */
+            --bg-color: #FFFAF0;      /* Floral White/Cream */
+            --text-dark: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Hind Siliguri', 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding-bottom: 60px;
+            background-image: radial-gradient(circle at 20% 20%, rgba(255, 215, 0, 0.05) 0%, transparent 40%),
+                              radial-gradient(circle at 80% 80%, rgba(128, 0, 0, 0.05) 0%, transparent 40%);
+        }
+
+        /* Top Decorative Border */
+        .top-decor {
+            background: linear-gradient(90deg, var(--gold-color), var(--orange-color), var(--primary-color), var(--orange-color), var(--gold-color));
+            height: 8px;
+            width: 100%;
+        }
+
+        /* Header Container */
+        .header-container {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #4A0000 0%, var(--primary-color) 50%, #4A0000 100%);
+            color: white;
+            border-bottom: 4px solid var(--gold-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            position: relative;
+        }
+
+        .header-container::after {
+            content: '🌸 🪔 🌸';
+            display: block;
+            font-size: 1.5rem;
+            margin-top: 10px;
+            letter-spacing: 5px;
+        }
+
+        .brand-logo {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--gold-color);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .main-title {
+            font-size: 2.8rem;
+            color: var(--gold-color);
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            font-weight: 700;
+        }
+
+        .sub-title {
+            font-size: 1.2rem;
+            color: #FFF;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        /* Grid Layout */
+        .combo-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            max-width: 1600px;
+            margin: 48px auto;
+            padding: 0 20px;
+        }
+
+        /* Individual Card Style */
+        .combo-card {
+            background: #ffffff;
+            border-radius: 15px;
+            border: 2px solid #E0A96D;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .combo-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(128, 0, 0, 0.2);
+            border-color: var(--primary-color);
+        }
+
+        /* Ribbon / Badge for FREE Offer */
+        .free-ribbon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--orange-color);
+            color: white;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+            border: 1px solid var(--gold-color);
+            z-index: 2;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Image Placeholder Space */
+        .card-img-box {
+            background: #FFFDF6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #F3E9DC;
+            min-height: 200px;
+        }
+
+        .spice-icon {
+            font-size: 4.5rem;
+            filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.1));
+        }
+
+        /* Card Content */
+        .card-content {
+            padding: 25px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .spice-title {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .offer-details {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .offer-details span {
+            color: var(--orange-color);
+            font-weight: 700;
+        }
+
+        .price-badge {
+            background: linear-gradient(135deg, #FFF9E6, #FFF0B3);
+            border: 1.5px dashed var(--primary-color);
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            font-weight: 700;
+            padding: 8px 15px;
+            border-radius: 8px;
+            margin-top: auto;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        /* Action Button */
+        .buy-button {
+            background: linear-gradient(135deg, var(--orange-color), var(--primary-color));
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 30px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .buy-button:hover {
+            background: linear-gradient(135deg, var(--primary-color), var(--orange-color));
+            box-shadow: 0 6px 12px rgba(128, 0, 0, 0.3);
+        }
+
+        /* Footer / Terms Section */
+        .footer-info {
+            text-align: center;
+            max-width: 800px;
+            margin: 40px auto 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-info p {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .tags-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .tag-item {
+            background: #E8D8C8;
+            color: #4A0000;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* Responsive Tweak */
+        @media (max-width: 600px) {
+            .main-title { font-size: 2rem; }
+            .combo-grid { gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-decor"></div>
+
+    <!-- Header Section -->
+    <header class="header-container">
+        <div class="brand-logo">Royal Hub Masala</div>
+        <h1 class="main-title">দুর্গাপুজো স্পেশাল কম্বো অফার</h1>
+        <p class="sub-title">Bringing Royal Taste To Cooking • Limited Time Offer</p>
+    </header>
+
+    <!-- Main Content / Cards Grid -->
+    <main class="combo-grid">
+
+        <!-- Card 1: Turmeric Powder -->
+        <div class="combo-card" data-item="হলুদ গুঁড়ো (Turmeric Powder)" data-price="৭৫ টাকা">
+            <div class="free-ribbon">25g FREE!</div>
+            <div class="card-img-box">
+                <img src="HALDI.jpeg" alt="Turmeric">
+                <span class="spice-icon" style="color: #FFC107;">💛</span>
+            </div>
+            <div class="card-content">
+                <h2 class="spice-title">হলুদ গুঁড়ো কম্বো</h2>
+                <p class="offer-details">১০০g + ৫০g কিনলে <span>২৫g একদম FREE!</span></p>
+                <div><span class="price-badge">মাত্র ৭৫ টাকায়!</span></div>
+                <button class="buy-button">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Card 2: Chili Powder -->
+        <div class="combo-card" data-item="লঙ্কা গুঁড়ো (Chilli Powder)" data-price="৮৫ টাকা">
+            <div class="free-ribbon">25g FREE!</div>
+            <div class="card-img-box">
+               <img src="LANKA.jpeg" alt="Chilli"> 
+                <span class="spice-icon" style="color: #D32F2F;">❤️</span>
+            </div>
+            <div class="card-content">
+                <h2 class="spice-title">লাল লঙ্কা গুঁড়ো কম্বো</h2>
+                <p class="offer-details">১০০g + ৫০g কিনলে <span>২৫g একদম FREE!</span></p>
+                <div><span class="price-badge">মাত্র ৮৫ টাকায়!</span></div>
+                <button class="buy-button">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Card 3: Coriander Powder -->
+        <div class="combo-card" data-item="ধনিয়া গুঁড়ো (Coriander Powder)" data-price="৭২ টাকা">
+            <div class="free-ribbon">25g FREE!</div>
+            <div class="card-img-box">
+              <img src="DHANIYA.jpeg" alt="Coriander"> 
+                <span class="spice-icon" style="color: #CDA434;">🤎</span>
+            </div>
+            <div class="card-content">
+                <h2 class="spice-title">ধনিয়া গুঁড়ো কম্বো</h2>
+                <p class="offer-details">১০০g + ৫০g কিনলে <span>২৫g একদম FREE!</span></p>
+                <div><span class="price-badge">মাত্র ৭২ টাকায়!</span></div>
+                <button class="buy-button">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Card 4: Cumin Powder -->
+        <div class="combo-card" data-item="জিরা গুঁড়ো (Cumin Powder)" data-price="৯০ টাকা">
+            <div class="free-ribbon">25g FREE!</div>
+            <div class="card-img-box">
+                <img src="JIRA.jpeg" alt="Cumin">
+                <span class="spice-icon" style="color: #8B5A2B;">🤎</span>
+            </div>
+            <div class="card-content">
+                <h2 class="spice-title">জিরা গুঁড়ো কম্বো</h2>
+                <p class="offer-details">১০০g + ৫০g কিনলে <span>২৫g একদম FREE!</span></p>
+                <div><span class="price-badge">মাত্র ৯০ টাকায়!</span></div>
+                <button class="buy-button">Order Now</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Details section -->
+    <footer class="footer-info">
+        <p>✨ Valid during Durga Puja • Valid Till October 15 ✨</p>
+        <div class="tags-container">
+            <div class="tag-item">100% Pure & Natural</div>
+            <div class="tag-item">Hygienically Packed</div>
+            <div class="tag-item">Authentic Bengali Flavor</div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select all buy buttons
+            const buttons = document.querySelectorAll(".buy-button");
+
+            buttons.forEach(button => {
+                button.addEventListener("click", function (e) {
+                    // Extract item information from parent card attributes
+                    const card = e.target.closest(".combo-card");
+                    const itemName = card.getAttribute("data-item");
+                    const itemPrice = card.getAttribute("data-price");
+
+                    // Beautiful native browser confirmation box
+                    alert(`🎉 দুর্গাপুজো স্পেশাল অফার! 🎉\n\n` +
+                          `📦 আপনি বেছে নিয়েছেন: ${itemName}\n` +
+                          `💰 বিশেষ মূল্য: ${itemPrice}\n\n` +
+                          `🛒 অফারটি সীমিত সময়ের জন্য! অর্ডার কনফার্ম করতে আমাদের কল বা মেসেজ করুন।`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
