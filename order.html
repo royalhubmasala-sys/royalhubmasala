@@ -23,6 +23,39 @@
             width: 100%;
             max-width: 450px;
         }
+        .whatsapp-scanner-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #25D366; /* হোয়াটসঅ্যাপ গ্রিন কালার */
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.qr-code-box {
+    margin: 15px auto;
+    padding: 10px;
+    background: #fff;
+    display: inline-block;
+    border: 1px solid #ddd;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
         h2 {
             color: #d32f2f;
             text-align: center;
@@ -132,6 +165,25 @@
         <!-- সাবমিট বাটন -->
         <button type="submit" class="submit-btn">🟢 WhatsApp-এ অর্ডার পাঠান</button>
     </form>
+
+
+    <!-- WhatsApp Order Scanner Section -->
+<div class="whatsapp-scanner-container">
+    <h3>Royal Hub Masala - সরাসরি হোয়াটসঅ্যাপে অর্ডার করুন</h3>
+    <p>নিচের QR কোডটি স্ক্যান করুন অথবা বোতামে ক্লিক করে সরাসরি আমাদের অর্ডার ডেস্কে চলে যান।</p>
+    
+    <!-- QR Code Image Display -->
+    <div class="qr-code-box">
+        <img src="whatsapp qr.png" alt="WhatsApp QR Code for Orders" width="200" height="200">
+    </div>
+    
+    <!-- Mobile Users Direct Button -->
+    <!-- নোট: ৯১ যুক্ত করে তোমাদের ১০ ডিজিটের নম্বরটি (যেমন ৯১XXXXXXXXXX) এখানে বসাবে -->
+    <a href="https://wa.me/message/J5GZ2BRI7HBZI1" 
+       target="_blank" class="whatsapp-btn">
+       <i class="fa fa-whatsapp"></i> সরাসরি হোয়াটসঅ্যাপ চ্যাট করুন
+    </a>
+</div>
     
     <a href="index.html" class="back-link">← হোম পেজে ফিরে যান</a>
 </div>
